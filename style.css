@@ -1,0 +1,37 @@
+table{
+	width: 80%;
+	float: left;
+}
+thead{
+
+}
+tbody{
+	text-indent: 7px;
+}
+th{
+	display: inline-block;
+	width: 13.33%;
+	cursor: pointer;
+	border-radius: 2px;
+}
+.highlight{
+	background-color: #ddd;
+}
+td{
+	display: none;
+}
+td:first-child{
+	display: inline-block;
+}
+.tips_wraper{
+	float: right;
+	width: 20%;
+	display: inline-block;
+}
+.day_tips, .work_tips{
+	padding: 10px;
+	border: 1px solid #ddd;
+}
+.work_tips{
+	margin-top: 10px;
+}
