@@ -41,7 +41,7 @@ td:first-child{
 
 
 // sample css 
-.test_css_1>li{
+.test_css_1> li{
 	width: 20px;
 	height: 20px;
 	background-color: #ddd;
@@ -58,7 +58,7 @@ td:first-child{
 	-webkit-border-radius: 10px;
 	 -moz-border-radius: 10px;
 	 border-radius: 10px;
-	 
+
 	// color offset-x offset-y blur-radius
 	 -webkit-box-shadow: rgba(0,0,0,0.8) 0px 0 5px;  
 	 -moz-box-shadow: rgba(0,0,0,0.8) 0 0 5px;
