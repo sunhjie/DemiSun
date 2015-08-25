@@ -74,6 +74,7 @@
 			<h3>note everyday</h3>
 			<p>html5 的script标签不用加上type了</p>
 			<p>span i等行内元素有时候用背景图片不成功，宽高问题？</p>
+			<p>页面中的a标签href是完整的URL，而点击跳转之后需要加上参数来为统计做数据。</p>
 		</div>
 
 		<div class="work_tips">
@@ -90,6 +91,12 @@
 				公司新址为北京市海淀区海淀大街34号海置创投大厦4层，邮编100080，总机不变：010-56397158
 			</p>
 			<p>javascript 高级编程视频网址：http://www.ycku.com/javascript/</p>
+			<p>
+				mobile项目build时 大量html文件修改的原因是我们目前使用的idt html压缩的配置和之前html压缩的配置不一样 解决这个问题就是将现在的配置改回原来那样,
+				npm root -g    在这个路径下找到idt
+				找到/idt/handler/runner/htmlmin.js 
+				将'—remove-intertag-spaces '和'--remove-quotes '注释掉
+			</p>
 	    </div>
 	</div>
 	
