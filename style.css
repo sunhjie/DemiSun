@@ -1,5 +1,5 @@
 table{
-	width: 80%;
+	width: 70%;
 	float: left;
 }
 thead{
@@ -19,6 +19,10 @@ th{
 }
 td{
 	display: none;
+}
+tbody>tr{
+	display: table-cell;
+	border: 1px solid #ddd;
 }
 td:first-child{
 	display: inline-block;
@@ -41,7 +45,7 @@ td:first-child{
 
 
 // sample css 
-.test_css_1> li{
+ul> li{
 	width: 20px;
 	height: 20px;
 	background-color: #ddd;

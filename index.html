@@ -9,7 +9,7 @@
 	<script src="index.js"></script>
 </head>
 <body>
-	<h1>hello mac world!</h1>
+	<h1>Just do it!</h1>
 	<table>
 		<thead>
 			<tr>
@@ -83,6 +83,48 @@
 				<td>angularjs</td>
 				<td>bootstrap</td>
 				<td>form 元素submit可以回车触发按钮，confirm浏览器跳转监听</td>
+				<td class="js">
+					<p>严格模式下，this指针不能指向全局windows对象。</p>
+					<p>
+						var a = {name: "honge"}; <br>
+						var b = a; <br>
+						b.name = "hoonge"; <br>
+						console.log(a.name);   //hoonge <br>
+ 
+						原理是js普通类型像string，boolean等存储在栈里，而对象（数组也是一种对象）存储在堆里，当创建b的时候实际上是创建一个指向该对象的指针，所以通过b改变name变量，a也会变。
+					</p>
+					<p>
+						
+					</p>
+				</td>
+				<td class="html">div 放在p标签里，在浏览器解析的时候会自动拿出来</td>
+				<td class="css">
+					<p>li+li 为css2选择器，将样式应用到后面的元素上，该条样式保证只有满足相邻元素才能应用到样式。同时也可以解决ie678不支持last-child伪类的问题。
+						<ul class="test_css_1"> 
+							<li class="test"></li>
+							<li class="test"></li>
+							<li class="test"></li>
+							<li class="test"></li>
+						</ul>
+					</p>
+
+					<p style="word-break: break-word">纯css气泡实现问题可以参见  http://www.cnblogs.com/daxiong/articles/3158630.html ，讲解的很详细。</p>
+
+					<p>圆角加阴影问题：
+							box-shadow: rgba(0,0,0,0.8) 0 0 5px;
+						<div class="test_css_2">
+						</div>
+					</p>
+
+				</td>
+				<td class="angularjs">angularjs</td>
+				<td class="bootstrap">bootstrap</td>
+				<td class="jquery">form 元素submit可以回车触发按钮，confirm浏览器跳转监听
+					<p>
+					DOM2: input.onclick = function(){}，绑定事件会覆盖。；    <br>
+					DOM3: addEventListner/attachEvent，绑定事件不会覆盖，其中attachEvent会以倒序的方式执行绑定的事件。
+					</p>
+				</td>
 			</tr>
 		</tbody>		
 		
@@ -92,20 +134,7 @@
 			<h3>note everyday</h3>
 			<p>html5 的script标签不用加上type了</p>
 			<p>span i等行内元素有时候用背景图片不成功，宽高问题？</p>
-			<p>li+li 为css2选择器，将样式应用到后面的元素上，该条样式保证只有满足相邻元素才能应用到样式。同时也可以解决ie678不支持last-child伪类的问题。
-				<ul class="test_css_1"> 
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-				</ul>
-			</p>
-			<p style="word-break: break-word">纯css气泡实现问题可以参见  http://www.cnblogs.com/daxiong/articles/3158630.html ，讲解的很详细。</p>
-			<p>圆角加阴影问题：
-				<div class="test_css_2">
-					
-				</div>
-			</p>
+			<p>页面中的a标签href是完整的URL，而点击跳转之后需要加上参数来为统计做数据。</p>
 		</div>
 
 		<div class="work_tips">
@@ -120,6 +149,13 @@
 			<p>
 		 		公司email密码： 　sunhjie78
 				公司新址为北京市海淀区海淀大街34号海置创投大厦4层，邮编100080，总机不变：010-56397158
+			</p>
+			<p>javascript 高级编程视频网址：http://www.ycku.com/javascript/</p>
+			<p>
+				mobile项目build时 大量html文件修改的原因是我们目前使用的idt html压缩的配置和之前html压缩的配置不一样 解决这个问题就是将现在的配置改回原来那样,
+				npm root -g    在这个路径下找到idt
+				找到/idt/handler/runner/htmlmin.js 
+				将'—remove-intertag-spaces '和'--remove-quotes '注释掉
 			</p>
 	    </div>
 	</div>
