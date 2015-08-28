@@ -32,6 +32,66 @@
 		</thead>
 		<tbody>
 			<tr>
+				<td>
+				严格模式下，this指针不能指向全局windows对象。
+				<p>lession1: 
+					一个完整的javascript应该由三个部分组成：
+					<ul>
+						<li>核心(ECMAScript) 语法部分</li>
+						<li>文档对象模型(DOM)</li>
+						<li>浏览器对象模型(BOM)</li>
+					</ul>
+					ECMAScript： 定义了这门语言的基础，比如语法／类型／语句／关键字／保留字等
+					在此基础上可以构建更完美的脚本语言。比如ActionScript等，目前已经规范到版本5.<br>
+					嵌入的script标签会按照文档加载的顺序执行，放到html结束标签后则会最后执行，放到body结束标签前面则会在所有dom内元素执行之后执行。
+					<br>
+					标识符：区分大小写，第一个字符必须是字母，_或$，后面的标识符可以再加上数字。
+					<br>
+					typeof 检测变量的数据类型：
+					<table>
+						<tr>
+							<th>字符串</th>
+							<th>描述</th>
+						</tr>
+						<tr>
+							<td>undefind</td>
+							<td>未定义</td>
+						</tr>
+						<tr>
+							<td>boolean</td>
+							<td>布尔值</td>
+						</tr>
+						<tr>
+							<td>string</td>
+							<td>字符串</td>
+						</tr>
+						<tr>
+							<td>number</td>
+							<td>数值</td>
+						</tr>
+						<tr>
+							<td>object</td>
+							<td>对象或null</td>
+						</tr>
+						<tr>
+							<td>function(不是数据类型，但可以用typeof打印)</td>
+							<td>函数</td>
+						</tr>
+					</table>
+					空的对象，表示这个对象创建了，里面没东西。var box = {};<br>
+					空对象，表示没有创建，就是一个null，var box = null  --> typeof box = object.
+					<br>
+					可以直接使用字面量来检测数据类型。typeof 250 = number;
+					虽然也可以这样用typeof(box) ，但typeof是一个操作符，而不是内置函数。所以最好用typeof box来使用。
+					<br>
+					var box;   //typeof box = undefined
+				</p>
+				</td>
+				<td>html</td>
+				<td>css3</td>
+				<td>angularjs</td>
+				<td>bootstrap</td>
+				<td>form 元素submit可以回车触发按钮，confirm浏览器跳转监听</td>
 				<td class="js">
 					<p>严格模式下，this指针不能指向全局windows对象。</p>
 					<p>
